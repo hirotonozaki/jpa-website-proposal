@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本ペンマンシップ協会 公式サイト 制作レポート｜野崎大翔</title>
+<meta name="description" content="日本ペンマンシップ協会 公式サイトの制作レポート。課題整理から検証まで一貫担当した公開・運用中のWeb制作プロジェクト。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/proposal.css"></head><body>
+
+<section class="page cover"><div class="cover__inner"><div class="rule"></div><p class="kicker">Web Production Report &nbsp;｜&nbsp; Front-end</p>
+<h1>日本ペンマンシップ協会<br>公式サイト</h1><p class="sub">コーポレートサイト 制作レポート</p>
+<p class="role"><b>課題整理・情報設計・画面設計・デザイン調整・実装・検証</b>まで一貫して担当</p>
+<p class="status">実際に公開・運用されているWebサイトです</p>
+<div class="cover__meta"><div><p class="k">制作者</p><p>野崎 大翔（Hiroto Nozaki）</p></div><div><p class="k">公開URL</p><p class="url">https://japanpenmanship.org/</p></div><div><p class="k">企画書</p><p class="url">https://hirotonozaki.github.io/jpa-project-proposal/</p></div><div><p class="k">GitHub</p><p class="url gh">https://github.com/hirotonozaki/jpa-website</p></div></div></div></section>
+
+<section class="page"><header class="head"><span class="head__no">02</span><div><p class="eyebrow">Project Overview</p><h2 class="head__title">プロジェクト概要</h2></div></header>
+<p class="lead">英字の書法・装飾文字のアート「ペンマンシップ」の普及活動を行う団体、日本ペンマンシップ協会の公式サイトです。全13ページのコーポレートサイトで、<em>現在も実際に公開・運用されています</em>。課題整理から検証・公開まで一貫して担当しました。</p>
+<div class="flow">
+<div class="flow__step"><span class="flow__num">①</span><span class="flow__name">課題整理</span><span class="flow__desc">課題・目的</span><span class="flow__period">1日</span></div><span class="flow__arrow">→</span>
+<div class="flow__step"><span class="flow__num">②</span><span class="flow__name">情報設計</span><span class="flow__desc">サイトマップ・導線</span><span class="flow__period">2日</span></div><span class="flow__arrow">→</span>
+<div class="flow__step"><span class="flow__num">③</span><span class="flow__name">画面設計</span><span class="flow__desc">ワイヤーフレーム</span><span class="flow__period">1日</span></div><span class="flow__arrow">→</span>
+<div class="flow__step"><span class="flow__num">④</span><span class="flow__name">デザイン調整</span><span class="flow__desc">UIへ落とし込み</span><span class="flow__period">2日</span></div><span class="flow__arrow">→</span>
+<div class="flow__step"><span class="flow__num">⑤</span><span class="flow__name">実装</span><span class="flow__desc">HTML/CSS/JS</span><span class="flow__period">7日</span></div><span class="flow__arrow">→</span>
+<div class="flow__step"><span class="flow__num">⑥</span><span class="flow__name">検証</span><span class="flow__desc">ブラウザ・端末</span><span class="flow__period">2日</span></div></div>
+<p class="flow-caption">企画から公開まで、上記6工程（合計 約15日）を一人で担当しました。</p>
+<div class="metrics">
+<div class="metric"><span class="num">13</span><span class="lbl">総ページ数</span></div>
+<div class="metric"><span class="num">108</span><span class="lbl">使用画像数<small>点</small></span></div>
+<div class="metric"><span class="num">10</span><span class="lbl">CSSファイル数<small>枚（自作）</small></span></div>
+<div class="metric"><span class="num">1</span><span class="lbl">JSファイル数<small>枚（共通 + slick）</small></span></div>
+<div class="metric"><span class="num">6</span><span class="lbl">担当工程数</span></div>
+<div class="metric"><span class="num">15</span><span class="lbl">制作日数<small>日（約3週間）</small></span></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">02</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">03</span><div><p class="eyebrow">Scope &amp; Schedule</p><h2 class="head__title">担当範囲と制作期間</h2></div></header>
+<div class="role-grid"><div class="role-col role-col--do"><p class="role-col__h">担当した範囲</p><ul><li>課題整理</li><li>情報設計</li><li>画面設計（ワイヤーフレーム）</li><li>デザイン調整（UIへの落とし込み）</li><li>HTML / CSS 実装</li><li>JavaScript 実装</li><li>レスポンシブ対応</li><li>検証・公開</li></ul></div>
+<div class="role-col role-col--dont"><p class="role-col__h">担当外（協会側）</p><ul><li>写真撮影</li><li>原稿（テキスト）作成</li><li>デザインの基本方針の策定</li></ul></div></div>
+<p class="role-note">デザインの方針・原稿・写真は協会側の素材をもとに、<b>画面設計から実装・検証・公開までを一人で担当</b>しました。素材を「どう配置し、どう動かし、どの端末でも崩さないか」を設計・実装する役割です。</p>
+<p class="subhead" style="margin-top:5mm">工程ごとの制作期間</p>
+<div class="period"><div class="period__item"><p class="period__ph">課題整理</p><p class="period__d">1日</p></div><div class="period__item"><p class="period__ph">情報設計</p><p class="period__d">2日</p></div><div class="period__item"><p class="period__ph">画面設計</p><p class="period__d">1日</p></div><div class="period__item"><p class="period__ph">デザイン調整</p><p class="period__d">2日</p></div><div class="period__item"><p class="period__ph">実装</p><p class="period__d">7日</p></div><div class="period__item"><p class="period__ph">検証</p><p class="period__d">2日</p></div><div class="period__item"><p class="period__ph">合計</p><p class="period__d">15日</p></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">03</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">04</span><div><p class="eyebrow">Step ① ・ Problem Definition</p><h2 class="head__title">課題整理</h2></div></header>
+<p class="lead" style="margin-bottom:7mm">ペンマンシップは日本では認知の低い専門分野です。協会には「活動を知ってもらい、見学・入会につなげる場」が必要でした。まず、誰に何を届けるサイトなのかを整理することから始めました。</p>
+<div class="issues"><div class="issue"><div class="n">01</div><h3>専門用語が多く離脱されやすい</h3><p>前提知識のない訪問者でも読み進められるよう、情報を段階的に見せる必要がある。</p></div><div class="issue"><div class="n">02</div><h3>6書体という情報量の多さ</h3><p>特徴の異なる書体を、迷わせず・比較しやすく見せる構成が必要。</p></div><div class="issue"><div class="n">03</div><h3>見学・入会への導線確保</h3><p>どのページからでも問い合わせへたどり着ける回遊性が必要。</p></div><div class="issue"><div class="n">04</div><h3>端末差による表示崩れ</h3><p>PC閲覧を中心に想定しつつ、スマホでもレイアウトを破綻させない。</p></div></div>
+<div class="purpose"><span class="k">制作の目的</span><p>初めてペンマンシップに触れる人にも魅力が伝わり、迷わず情報へたどり着き、最終的に「見学・入会」という行動につながるサイトをつくること。</p></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">04</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">05</span><div><p class="eyebrow">Constraints</p><h2 class="head__title">制約条件</h2></div></header>
+<p class="lead" style="margin-bottom:6mm">実案件として、以下の制約を踏まえて設計・実装しました。<em>制約を前提に「何を優先するか」</em>を判断しています。</p>
+<div class="constraints">
+<div class="constraint"><p class="ctag">Constraint 01</p><h3>協会側で更新する前提</h3><p>公開後は協会側が情報を更新します。そのため<b>共通パーツの一元管理・テンプレート化</b>を重視し、更新時に崩れにくい構成にしました。</p></div>
+<div class="constraint"><p class="ctag">Constraint 02</p><h3>PC利用者が多い想定</h3><p>閲覧の中心は PC と想定。<b>PCを基準に設計</b>しつつ、スマホ・タブレットでも破綻しないレスポンシブ対応を行いました。</p></div>
+<div class="constraint"><p class="ctag">Constraint 03</p><h3>既存のデザイン方針を踏襲</h3><p>協会のデザイン方針・素材が前提。ゼロからデザインを起こすのではなく、<b>方針を各端末で崩れないUIへ落とし込む</b>役割に徹しました。</p></div>
+<div class="constraint"><p class="ctag">Constraint 04</p><h3>専門用語が多い領域</h3><p>ペンマンシップは専門性が高く前提知識が必要。<b>情報を段階的に提示し、ナビに日本語補足</b>を添えて、初見でも迷わない構成にしました。</p></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">05</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">06</span><div><p class="eyebrow">Step ② ・ Information Architecture</p><h2 class="head__title">情報設計</h2></div></header>
+<div class="cols cols-11-9"><div class="col"><p class="subhead">サイトマップ</p><span class="node-top">TOP（index）</span>
+<ul class="tree"><li><div class="box">About Us（協会について）</div></li><li><div class="box">Penmanship（ペンマンシップについて）</div></li><li><div class="box">Gallery（書体・作品）</div></li><li><div class="box">Contact（見学・入会の問い合わせ）</div></li><li><div class="box">Members Only（会員専用）</div></li><li><div class="box">Privacy Policy</div></li></ul>
+<p class="tree-sub">Penmanship 配下に 6 書体の詳細ページを配置。</p></div>
+<div class="col"><div class="ia"><h3>設計の意図と導線</h3><ul><li><b>トップを「目次」に。</b>4テーマへカード型に分岐させ、全体像をひと目で把握できるようにした。</li><li><b>理解が進む順に整理。</b>Penmanship は「基礎→書体→筆記具→学習→歴史」と読み進めるほど分かる流れに。</li><li><b>ゴールは見学・入会。</b>複数の導線でどのページからでも Contact へ到達できる回遊性を確保。</li><li><b>会員情報は分離。</b>会員専用エリアを切り分け、一般訪問者の動線をシンプルに保った。</li></ul></div></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">06</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">07</span><div><p class="eyebrow">Information Structure ／ Before → After</p><h2 class="head__title">情報構造の整理｜Before → After</h2></div></header>
+<p class="lead" style="margin-bottom:3mm">課題整理で見えた「情報が多く・散らばりやすい」状態を、情報設計で<em>4テーマの目次型</em>へ整理しました。</p>
+<div class="ba">
+<div class="ba__col ba__col--before"><p class="ba__h">改善前：情報が散在</p><div class="ba__body">
+<svg viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="8" width="42" height="14" fill="#e6e8ec" stroke="#cdd2da"/><rect x="120" y="6" width="50" height="14" fill="#e6e8ec" stroke="#cdd2da"/><rect x="60" y="26" width="38" height="14" fill="#e6e8ec" stroke="#cdd2da"/><rect x="150" y="30" width="44" height="14" fill="#e6e8ec" stroke="#cdd2da"/><rect x="14" y="44" width="46" height="14" fill="#e6e8ec" stroke="#cdd2da"/><rect x="92" y="50" width="40" height="14" fill="#e6e8ec" stroke="#cdd2da"/><rect x="40" y="68" width="52" height="14" fill="#e6e8ec" stroke="#cdd2da"/><rect x="140" y="66" width="46" height="14" fill="#e6e8ec" stroke="#cdd2da"/></svg>
+<p>ページや情報が並列に存在し、訪問者が<b>どこから見ればよいか分かりにくい</b>状態。専門用語も多く、離脱しやすい。</p></div></div>
+<span class="ba-arrow">→</span>
+<div class="ba__col ba__col--after"><p class="ba__h">改善後：4テーマの目次型</p><div class="ba__body">
+<svg viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg"><rect x="70" y="6" width="60" height="16" fill="#1c2230"/><text x="100" y="17" text-anchor="middle" font-size="8" fill="#b08d57" font-family="serif">TOP</text><line x1="100" y1="22" x2="100" y2="32" stroke="#b08d57"/><line x1="26" y1="32" x2="174" y2="32" stroke="#b08d57"/><line x1="26" y1="32" x2="26" y2="40" stroke="#b08d57"/><line x1="76" y1="32" x2="76" y2="40" stroke="#b08d57"/><line x1="124" y1="32" x2="124" y2="40" stroke="#b08d57"/><line x1="174" y1="32" x2="174" y2="40" stroke="#b08d57"/><rect x="8" y="40" width="36" height="40" fill="#f5f5f7" stroke="#b08d57"/><rect x="58" y="40" width="36" height="40" fill="#f5f5f7" stroke="#b08d57"/><rect x="106" y="40" width="36" height="40" fill="#f5f5f7" stroke="#b08d57"/><rect x="156" y="40" width="36" height="40" fill="#f5f5f7" stroke="#b08d57"/></svg>
+<p>トップを<b>目次</b>と位置づけ、4テーマ（About / Penmanship / Gallery / Contact）へカード型に分岐。初見でも<b>全体像をひと目で把握</b>できる。</p></div></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">07</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">08</span><div><p class="eyebrow">User Flow &amp; Page Transition</p><h2 class="head__title">導線設計｜ユーザーフロー・画面遷移</h2></div></header>
+<p class="lead" style="margin-bottom:5mm">情報設計で決めた導線を、ユーザーの動き（ユーザーフロー）と画面のつながり（画面遷移）の2つの図で整理しました。</p>
+<div class="cols cols-6-6"><div class="col"><div class="uflow">
+<h4>初回訪問者のフロー</h4><div class="uflow__seq"><div class="uflow__node">TOP（目次）</div><div class="uflow__arrow">▼</div><div class="uflow__node">Penmanship を知る</div><div class="uflow__arrow">▼</div><div class="uflow__node">Gallery で作品を見る</div><div class="uflow__arrow">▼</div><div class="uflow__node">Contact</div><div class="uflow__arrow">▼</div><div class="uflow__node uflow__node--goal">見学・入会</div></div>
+<h4>会員のフロー</h4><div class="uflow__seq"><div class="uflow__node">TOP</div><div class="uflow__arrow">▼</div><div class="uflow__node uflow__node--goal">Members Only（会員専用）</div></div>
+</div></div>
+<div class="col"><p class="subhead">画面遷移図</p><div class="tflow"><div class="tflow__node">TOP</div><span class="tflow__arrow">→</span><div class="tflow__pages"><div class="tflow__page">About Us</div><div class="tflow__page">Penmanship（6書体）</div><div class="tflow__page">Gallery</div><div class="tflow__page">Members Only</div></div><span class="tflow__arrow">→</span><div class="tflow__goal">Contact<br>見学・入会</div></div></div></div>
+<div class="flow-intent">どのページからでも <b>Contact（見学・入会）</b> へ最短で戻れるよう、グローバルナビ・フッター・各セクション末に導線を重ねて配置。会員向けは <b>Members Only</b> に分離し、一般訪問者の動線を妨げないようにしています。</div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">08</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">09</span><div><p class="eyebrow">Step ③ ・ Screen Design ／ Wireframe</p><h2 class="head__title">画面設計｜ワイヤーフレーム</h2></div></header>
+<p class="lead" style="margin-bottom:4mm">情報設計で決めた「目次型トップ・複数導線・段階的な情報提示」を、画面のどこに何を置くかへ落とし込みました。実装前に、PC を基準に Tablet・SP での崩し方まで設計しています。</p>
+<div class="wf-row">
+<div class="wf wf--pc"><p class="wf__cap">PC<small>1025px〜</small></p><svg viewBox="0 0 300 188" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="298" height="186" fill="#fff" stroke="#1c2230" stroke-width="1.4"/><rect x="1" y="1" width="298" height="26" fill="#f5f5f7"/><line x1="1" y1="27" x2="299" y2="27" stroke="#dcdee4"/><rect x="14" y="9" width="58" height="10" fill="#b08d57"/><rect x="150" y="11" width="26" height="5" fill="#c8cbd2"/><rect x="184" y="11" width="26" height="5" fill="#c8cbd2"/><rect x="218" y="11" width="26" height="5" fill="#c8cbd2"/><rect x="252" y="11" width="26" height="5" fill="#c8cbd2"/><rect x="14" y="38" width="272" height="64" fill="#eef0f3" stroke="#dcdee4"/><text x="150" y="74" text-anchor="middle" font-family="serif" font-size="8" fill="#9aa0ab">MAIN VISUAL</text><rect x="14" y="112" width="84" height="50" fill="#f5f5f7" stroke="#dcdee4"/><rect x="108" y="112" width="84" height="50" fill="#f5f5f7" stroke="#dcdee4"/><rect x="202" y="112" width="84" height="50" fill="#f5f5f7" stroke="#dcdee4"/><rect x="1" y="170" width="298" height="17" fill="#1c2230"/></svg></div>
+<span class="wf-arrow">→</span>
+<div class="wf wf--tb"><p class="wf__cap">TABLET<small>768–1024px</small></p><svg viewBox="0 0 175 220" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="173" height="218" fill="#fff" stroke="#1c2230" stroke-width="1.4"/><rect x="1" y="1" width="173" height="24" fill="#f5f5f7"/><line x1="1" y1="25" x2="174" y2="25" stroke="#dcdee4"/><rect x="12" y="8" width="48" height="9" fill="#b08d57"/><rect x="98" y="10" width="16" height="5" fill="#c8cbd2"/><rect x="120" y="10" width="16" height="5" fill="#c8cbd2"/><rect x="142" y="10" width="16" height="5" fill="#c8cbd2"/><rect x="12" y="34" width="151" height="70" fill="#eef0f3" stroke="#dcdee4"/><text x="87" y="72" text-anchor="middle" font-family="serif" font-size="7" fill="#9aa0ab">MAIN VISUAL</text><rect x="12" y="114" width="72" height="72" fill="#f5f5f7" stroke="#dcdee4"/><rect x="91" y="114" width="72" height="72" fill="#f5f5f7" stroke="#dcdee4"/><rect x="1" y="201" width="173" height="18" fill="#1c2230"/></svg></div>
+<span class="wf-arrow">→</span>
+<div class="wf wf--sp"><p class="wf__cap">SP<small>〜500px</small></p><svg viewBox="0 0 105 210" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="103" height="208" fill="#fff" stroke="#1c2230" stroke-width="1.4"/><rect x="1" y="1" width="103" height="22" fill="#f5f5f7"/><line x1="1" y1="23" x2="104" y2="23" stroke="#dcdee4"/><rect x="10" y="7" width="38" height="8" fill="#b08d57"/><rect x="84" y="8" width="12" height="2" fill="#1c2230"/><rect x="84" y="12" width="12" height="2" fill="#1c2230"/><rect x="84" y="16" width="12" height="2" fill="#1c2230"/><rect x="10" y="30" width="85" height="60" fill="#eef0f3" stroke="#dcdee4"/><text x="52" y="63" text-anchor="middle" font-family="serif" font-size="6" fill="#9aa0ab">VISUAL</text><rect x="10" y="100" width="85" height="28" fill="#f5f5f7" stroke="#dcdee4"/><rect x="10" y="134" width="85" height="28" fill="#f5f5f7" stroke="#dcdee4"/><rect x="10" y="168" width="85" height="20" fill="#f5f5f7" stroke="#dcdee4"/><rect x="1" y="191" width="103" height="18" fill="#1c2230"/></svg></div></div>
+<table class="resp-table"><tr><th>項目</th><th>PC（1025px〜）</th><th>Tablet（768–1024px）</th><th>SP（〜500px）</th></tr><tr><td>レイアウト</td><td>2〜3カラム中心</td><td>一部を1カラム化</td><td>縦1カラムに集約</td></tr><tr><td>ナビゲーション</td><td>横並び表示</td><td>横並び（余白を調整）</td><td>ハンバーガーで開閉</td></tr><tr><td>スライダー</td><td>3枚表示</td><td>2枚表示</td><td>1枚表示</td></tr></table>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">09</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">10</span><div><p class="eyebrow">Step ③ ・ Screen Design ／ Rationale</p><h2 class="head__title">画面設計｜レイアウトの根拠</h2></div></header>
+<p class="lead" style="margin-bottom:5mm">各レイアウトは見た目の好みではなく、<em>情報設計で決めたこと</em>を画面に反映した結果です。「どんな情報を・どの順で見せるか」を「どこに・どう配置するか」へつなげています。</p>
+<div class="sd"><div class="sd__item"><div class="sd__label">トップを目次化<small>Top as Index</small></div><div class="sd__body">情報設計でトップを「目次」と位置づけたため、ファーストビューの直下に<b>4テーマをカード型で横並び</b>に配置。初訪問者がスクロール前に全体像をつかめることを優先。SPではカードを縦積みに。</div></div>
+<div class="sd__item"><div class="sd__label">複数導線の確保<small>Multiple Paths</small></div><div class="sd__body">「見学・入会」をゴールに設定したため、グローバルナビ・フッター・トップのカードと<b>複数の経路で Contact に到達</b>できるよう配置。SPではナビをハンバーガーに格納しつつ各セクション末にも導線を残す。</div></div>
+<div class="sd__item"><div class="sd__label">段階的な情報提示<small>Progressive Disclosure</small></div><div class="sd__body">専門用語の多さという課題に対し、画面を上から「協会とは→何が学べるか→作品→参加方法」の順に設計。ナビ項目には<b>日本語の補足</b>を添えた。</div></div></div>
+<div class="ia-link">情報設計（②）で決めた<b>目次型トップ・複数導線・段階的提示</b>を、画面設計（③）でレイアウトへ落とし込み、デザイン調整（④）で見た目を整える——という順で進めています。</div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">10</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">11</span><div><p class="eyebrow">Step ④ ・ Design Adjustment</p><h2 class="head__title">デザイン調整</h2></div></header>
+<div class="cols cols-7-5"><div class="col"><div class="concept-banner"><b>“インクと紙の上品さ”</b><span>協会のデザイン方針を踏まえ、手書き文字の美しさが主役になるUIへ落とし込みました。</span></div>
+<dl class="dl"><div class="row"><dt>フォント</dt><dd>英字見出しに Marcellus、和文に Noto Sans / Serif JP を使い分け。FONTPLUS で指定フォントを表示し、書法の世界観に合うトーンへ調整。</dd></div><div class="row"><dt>配色・余白</dt><dd>落ち着いた背景に濃色テキスト。作品画像が引き立つよう彩度を抑え、余白を広めにとって静かな印象に。</dd></div><div class="row"><dt>あしらい</dt><dd>羽根・葉などの SVG 装飾を要所に配置。過剰にならない範囲で世界観を補強。</dd></div></dl>
+<p class="note" style="margin-top:5mm">※ デザイン方針・原稿・写真は協会側の素材をもとに、各端末で崩れないようUIへ落とし込む調整を担当した。</p></div>
+<div class="col"><figure class="shot--filled"><img src="assets/images/main-visual.png" alt="トップページ メインビジュアル（PC）"><figcaption>トップページ メインビジュアル（実画面）</figcaption></figure></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">11</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">12</span><div><p class="eyebrow">Step ⑤ ・ Implementation ／ Tech Selection</p><h2 class="head__title">実装｜技術選定と理由</h2></div></header>
+<p class="lead" style="margin-bottom:4mm">使用した技術を「なぜ採用したか」とあわせて整理しました。保守と運用を前提に選定しています。</p>
+<div class="why">
+<div class="why__item"><h4>マークアップ：HTML5 セマンティック<small>Why</small></h4><p>見出し階層や <code>header/nav/section</code> を適切に使い、<b>構造が読み取りやすく・SEO/アクセシビリティにも有利</b>な土台にするため。</p></div>
+<div class="why__item"><h4>スタイル：CSS3 ＋ 共通設計（BEMライク）<small>Why</small></h4><p>全13ページで見た目を統一し、修正を一箇所で済ませるため。共通スタイルは <b>reset.css ＋ common.css に集約</b>し、命名で要素の対応関係を明確にした。</p></div>
+<div class="why__item"><h4>スクリプト：JavaScript / jQuery<small>Why</small></h4><p>スライダー（slick）・アコーディオンなど<b>既存プラグインの資産を活かし、短い工期で安定した挙動</b>を実現するため。詳細は下記。</p></div></div>
+<div class="reason"><h4>jQuery を採用した理由（実務判断）</h4><ul>
+<li><b>案件制作時期</b>：jQuery系プラグイン（slick等）が安定して使える時期で、実績ある選択だった。</li>
+<li><b>既存資産との整合性</b>：参考事例・プラグインが豊富で、実装・調整を早く進められた。</li>
+<li><b>保守性</b>：協会側・第三者が今後触る前提で、情報が探しやすい技術を選んだ。</li>
+<li><b>学習コスト</b>：限られた工期で確実に仕上げるため、習熟度の高い技術を採用した。</li></ul></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">12</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">13</span><div><p class="eyebrow">Step ⑤ ・ Implementation ／ Code</p><h2 class="head__title">実装｜コード例（BEM・共通化）</h2></div></header>
+<p class="code-cap">共通ヘッダーの実装例<small>Block__Element で対応関係が一目で分かる命名にする</small></p>
+<pre class="code-block"><span class="cm">&lt;!-- HTML : ブロック header の中に要素を入れ子で命名 --&gt;</span>
+&lt;<span class="tg">header</span> class="header"&gt;
+  &lt;<span class="tg">nav</span> class="header__nav"&gt;
+    &lt;<span class="tg">a</span> class="header__item header__link"&gt;About Us&lt;/<span class="tg">a</span>&gt;
+    &lt;<span class="tg">a</span> class="header__item header__link"&gt;Gallery&lt;/<span class="tg">a</span>&gt;
+  &lt;/<span class="tg">nav</span>&gt;
+&lt;/<span class="tg">header</span>&gt;</pre>
+<pre class="code-block" style="margin-top:3mm"><span class="cm">/* CSS : header（Block）__nav / __link（Element）*/</span>
+<span class="sel">.header__nav</span>  { display: flex; gap: 24px; }
+<span class="sel">.header__item</span> { list-style: none; }
+<span class="sel">.header__link</span> { color: var(--navy); transition: .2s; }
+<span class="sel">.header__link:hover</span> { color: var(--gold); }</pre>
+<div class="code-exp"><div class="box"><h4>BEM ライクな命名</h4><p><code>.header__nav</code> / <code>.header__item</code> / <code>.header__link</code> のように <b>Block__Element</b> で書くことで、クラス名を見ただけで「どのブロックの何か」が分かり、HTMLとCSSの対応を追いやすくなります。</p></div>
+<div class="box"><h4>共通化と保守性</h4><p>ヘッダー・フッター・ボタンなど共通の部品は <b>common.css に集約</b>。各ページは呼び出すだけにすることで、<b>13ページ分の修正を1箇所で完結</b>でき、表記ゆれや直し漏れを防げます。</p></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">13</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">14</span><div><p class="eyebrow">Implementation Result ／ Devices</p><h2 class="head__title">実機での表示</h2></div></header>
+<p class="lead" style="margin-bottom:1mm">ワイヤーフレームで設計したレイアウトを、実際の各端末で表示した結果です（実サイトのスクリーンショット）。</p>
+<div class="devices"><figure class="device device--pc"><figcaption class="device__label"><span class="device__name">PC</span><span class="device__size">1025px〜</span></figcaption><div class="device__shot"><img src="assets/images/responsive-pc.png" alt="PCでの表示"></div></figure><figure class="device device--tablet"><figcaption class="device__label"><span class="device__name">TABLET</span><span class="device__size">768–1024px</span></figcaption><div class="device__shot"><img src="assets/images/responsive-tablet.png" alt="タブレットでの表示"></div></figure><figure class="device device--sp"><figcaption class="device__label"><span class="device__name">SP</span><span class="device__size">〜500px</span></figcaption><div class="device__shot"><img src="assets/images/responsive-sp.png" alt="スマートフォンでの表示"></div></figure></div>
+<div class="bp-note"><div class="bp-note__item"><p class="bp-note__nm">PC</p><p class="bp-note__d">1025px 以上</p></div><div class="bp-note__item"><p class="bp-note__nm">Tablet</p><p class="bp-note__d">768〜1024px</p></div><div class="bp-note__item"><p class="bp-note__nm">SP</p><p class="bp-note__d">500px 以下</p></div><div class="bp-note__sw"><span>SP では <b>ハンバーガーメニュー</b>へ切替</span></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">14</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">15</span><div><p class="eyebrow">Step ⑥ ・ Verification</p><h2 class="head__title">検証｜不具合・原因・修正・結果</h2></div></header>
+<p class="lead" style="margin-bottom:3mm">Chrome・Safari・スマートフォン・タブレットで確認し、見つけた不具合を「原因まで特定して修正」しました。</p>
+<div class="vr4">
+<div class="vr4__item"><div class="vr4__cell vr4__cell--issue"><p class="vr4__k">▲ 不具合</p><p class="vr4__t">iPhone Safari でファーストビューが画面より大きく、下が見切れた。</p></div><div class="vr4__cell vr4__cell--cause"><p class="vr4__k">原因</p><p class="vr4__t">Safari の動的ツールバーで 100vh が実表示領域より大きく計算されていた。</p></div><div class="vr4__cell vr4__cell--fix"><p class="vr4__k">● 修正</p><p class="vr4__t">高さの指定を見直し、実際の表示領域に合わせて調整。</p></div><div class="vr4__cell vr4__cell--res"><p class="vr4__k">✓ 結果</p><p class="vr4__t">iPhone Safari でファーストビューが正しく収まった。</p></div></div>
+<div class="vr4__item"><div class="vr4__cell vr4__cell--issue"><p class="vr4__k">▲ 不具合</p><p class="vr4__t">タブレットで Gallery の画像がカラム幅からはみ出した。</p></div><div class="vr4__cell vr4__cell--cause"><p class="vr4__k">原因</p><p class="vr4__t">画像に max-width 指定が無く、元サイズで表示されていた。</p></div><div class="vr4__cell vr4__cell--fix"><p class="vr4__k">● 修正</p><p class="vr4__t">画像を max-width:100% にしてカラム幅に追従させた。</p></div><div class="vr4__cell vr4__cell--res"><p class="vr4__k">✓ 結果</p><p class="vr4__t">はみ出しと横スクロールを解消した。</p></div></div>
+<div class="vr4__item"><div class="vr4__cell vr4__cell--issue"><p class="vr4__k">▲ 不具合</p><p class="vr4__t">iPad でグローバルナビの余白が詰まり窮屈だった。</p></div><div class="vr4__cell vr4__cell--cause"><p class="vr4__k">原因</p><p class="vr4__t">768〜1024px の中間幅にブレークポイントが無かった。</p></div><div class="vr4__cell vr4__cell--fix"><p class="vr4__k">● 修正</p><p class="vr4__t">中間幅にBPを追加し、ナビの余白を再調整。</p></div><div class="vr4__cell vr4__cell--res"><p class="vr4__k">✓ 結果</p><p class="vr4__t">タブレットでの窮屈さを解消した。</p></div></div>
+<div class="vr4__item"><div class="vr4__cell vr4__cell--issue"><p class="vr4__k">▲ 不具合</p><p class="vr4__t">スマホでハンバーガー展開中に背景がスクロールした。</p></div><div class="vr4__cell vr4__cell--cause"><p class="vr4__k">原因</p><p class="vr4__t">展開時に body 側のスクロールを止めていなかった。</p></div><div class="vr4__cell vr4__cell--fix"><p class="vr4__k">● 修正</p><p class="vr4__t">展開中は body のスクロールを固定する処理を追加。</p></div><div class="vr4__cell vr4__cell--res"><p class="vr4__k">✓ 結果</p><p class="vr4__t">意図しない背景スクロールを防いだ。</p></div></div>
+</div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">15</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">16</span><div><p class="eyebrow">Performance ／ Lighthouse</p><h2 class="head__title">Lighthouse 計測</h2></div></header>
+<p class="lead" style="margin-bottom:2mm">Chrome DevTools の Lighthouse による計測結果です。各項目で意識した改善点を下にまとめています。</p>
+<div class="lh-row">
+<div class="lh"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="none" stroke="#e6e8ec" stroke-width="3"/><circle cx="18" cy="18" r="16" fill="none" stroke="#3f7a52" stroke-width="3" stroke-dasharray="92.5 100.5" stroke-linecap="round" transform="rotate(-90 18 18)"/><text x="18" y="21.5" text-anchor="middle" font-family="serif" font-size="10" fill="#1c2230">92</text></svg><p class="lh__label">Performance</p></div>
+<div class="lh"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="none" stroke="#e6e8ec" stroke-width="3"/><circle cx="18" cy="18" r="16" fill="none" stroke="#3f7a52" stroke-width="3" stroke-dasharray="96.5 100.5" stroke-linecap="round" transform="rotate(-90 18 18)"/><text x="18" y="21.5" text-anchor="middle" font-family="serif" font-size="10" fill="#1c2230">96</text></svg><p class="lh__label">Accessibility</p></div>
+<div class="lh"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="none" stroke="#e6e8ec" stroke-width="3"/><circle cx="18" cy="18" r="16" fill="none" stroke="#3f7a52" stroke-width="3" stroke-dasharray="100.5 100.5" stroke-linecap="round" transform="rotate(-90 18 18)"/><text x="18" y="21.5" text-anchor="middle" font-family="serif" font-size="10" fill="#1c2230">100</text></svg><p class="lh__label">Best Practices</p></div>
+<div class="lh"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="none" stroke="#e6e8ec" stroke-width="3"/><circle cx="18" cy="18" r="16" fill="none" stroke="#3f7a52" stroke-width="3" stroke-dasharray="100.5 100.5" stroke-linecap="round" transform="rotate(-90 18 18)"/><text x="18" y="21.5" text-anchor="middle" font-family="serif" font-size="10" fill="#1c2230">100</text></svg><p class="lh__label">SEO</p></div></div>
+<div class="lh-note"><h4>意識して改善した項目</h4><ul>
+<li><b>Performance</b>：画像サイズの適正化と読み込み順の整理で、初回表示を軽くした（さらにWebP化・遅延読み込みを改善提案に記載）。</li>
+<li><b>Accessibility</b>：見出し階層・alt・コントラスト比を確認し、読み上げ・キーボードでも辿れる構造を意識した。</li>
+<li><b>Best Practices</b>：適切な画像比率・HTTPSリンク・コンソールエラーの解消など、基本的な品質を担保した。</li>
+<li><b>SEO</b>：title / meta description / OGP / セマンティックな見出しを整備し、検索・共有時の見え方を最適化した。</li></ul></div>
+<p class="note" style="margin-top:3mm">※ スコアは計測時の値です。再計測時は最新の数値に差し替えてください。</p>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">16</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">17</span><div><p class="eyebrow">Accessibility</p><h2 class="head__title">アクセシビリティ対応</h2></div></header>
+<p class="lead" style="margin-bottom:5mm">「誰でも使えるサイト」を意識し、最低限のアクセシビリティ対応を行いました。今後さらに高い基準で対応していきたい領域です。</p>
+<div class="a11y">
+<div class="a11y__card"><h3>代替テキスト（alt）</h3><ul><li>画像に内容を表す <code>alt</code> を設定し、読み上げ環境でも情報が伝わるようにした。</li><li>装飾目的の画像は <code>alt</code> を空にし、不要な読み上げを避けた。</li></ul></div>
+<div class="a11y__card"><h3>キーボード操作</h3><ul><li>ナビゲーション・リンク・フォームをキーボードだけでも辿れることを確認。</li><li>ハンバーガーメニューの開閉も操作できるよう配慮した。</li></ul></div>
+<div class="a11y__card"><h3>コントラスト・可読性</h3><ul><li>テキストと背景のコントラスト比を確認し、読みやすさを担保。</li><li>見出し階層（h1〜h3）を整理し、構造を分かりやすくした。</li></ul></div></div>
+<div class="ia-link" style="margin-top:7mm">アクセシビリティは<b>制作会社でも年々重視される領域</b>のため、今後は WCAG の基準を参照しながら、フォーカス表示やランドマークなどの対応も深めていきたいと考えています。</div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">17</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">18</span><div><p class="eyebrow">Improvement Proposal</p><h2 class="head__title">改善提案（優先度 A〜C）</h2></div></header>
+<p class="lead" style="margin-bottom:4mm">公開後も継続して改善したい点を、<em>課題 → 改善施策 → 期待効果</em>で整理し、<em>優先度 A（高）〜C（低）</em>をつけました。</p>
+<div class="imp">
+<div class="imp__item"><div class="imp__cell imp__cell--issue"><p class="imp__k">課題</p><p class="imp__t">画像が108点と多く、初回表示が遅くなりやすい。</p></div><div class="imp__cell"><p class="imp__k">改善施策</p><p class="imp__t"><b>画像のWebP化・遅延読み込み</b>を導入する。</p></div><div class="imp__cell imp__cell--eff"><p class="imp__k">期待効果</p><p class="imp__t">表示速度の改善と離脱の低減。</p></div><div class="imp__pri imp__pri--a"><span class="lv">A</span><small>高</small></div></div>
+<div class="imp__item"><div class="imp__cell imp__cell--issue"><p class="imp__k">課題</p><p class="imp__t">jQuery のスクロール監視が処理として重い。</p></div><div class="imp__cell"><p class="imp__k">改善施策</p><p class="imp__t">フェードイン等を <b>IntersectionObserver</b> へ置き換える。</p></div><div class="imp__cell imp__cell--eff"><p class="imp__k">期待効果</p><p class="imp__t">スクロール処理の軽量化と保守性の向上。</p></div><div class="imp__pri imp__pri--b"><span class="lv">B</span><small>中</small></div></div>
+<div class="imp__item"><div class="imp__cell imp__cell--issue"><p class="imp__k">課題</p><p class="imp__t">アクセシビリティをより高い基準で対応したい。</p></div><div class="imp__cell"><p class="imp__k">改善施策</p><p class="imp__t"><b>フォーカス表示・ランドマーク・ARIA</b>を整備する。</p></div><div class="imp__cell imp__cell--eff"><p class="imp__k">期待効果</p><p class="imp__t">利用できるユーザーの幅をさらに広げる。</p></div><div class="imp__pri imp__pri--c"><span class="lv">C</span><small>低</small></div></div>
+<div class="imp__item"><div class="imp__cell imp__cell--issue"><p class="imp__k">課題</p><p class="imp__t">フォームの入力フィードバックが弱い。</p></div><div class="imp__cell"><p class="imp__k">改善施策</p><p class="imp__t"><b>入力チェック・送信時の状態表示</b>を追加する。</p></div><div class="imp__cell imp__cell--eff"><p class="imp__k">期待効果</p><p class="imp__t">入力ミスの減少と入力完了率の向上。</p></div><div class="imp__pri imp__pri--c"><span class="lv">C</span><small>低</small></div></div>
+</div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">18</span></div></section>
+
+<section class="page"><header class="head"><span class="head__no">19</span><div><p class="eyebrow">Summary ／ Next Time</p><h2 class="head__title">まとめ｜次回同様の案件を担当するなら</h2></div></header>
+<p class="lead" style="margin-bottom:5mm">この案件を振り返り、<em>次に同じような案件を担当する場合</em>に取り組みたいことを整理しました。</p>
+<div class="nextgrid">
+<div class="nextcard"><h4>改善したいこと<small>Improve</small></h4><ul><li>表示速度を「最後の調整」ではなく、最初から設計に含める。</li><li>108点の画像を初期から最適化（WebP・サイズ指定）する。</li><li>検証の観点を着手前にチェックリスト化しておく。</li></ul></div>
+<div class="nextcard"><h4>再設計したいこと<small>Re-design</small></h4><ul><li>PC基準ではなく<b>モバイルファースト</b>＋ブレークポイント統一で組み直す。</li><li>共通パーツをさらに部品単位で整理し、再利用しやすくする。</li><li>状態（開閉・表示切替）の管理方法を見直す。</li></ul></div>
+<div class="nextcard"><h4>技術的な挑戦<small>Challenge</small></h4><ul><li>jQuery 依存からバニラJS / IntersectionObserver へ置き換える。</li><li>アクセシビリティをさらに高い基準で対応する。</li><li>コンポーネント志向の設計（部品の独立化）に挑戦する。</li></ul></div></div>
+<div class="urlband"><div><p class="k">実際に公開・運用中のサイトです</p><div class="pair"><small>公開URL（運用中）</small><a href="https://japanpenmanship.org/">https://japanpenmanship.org/</a></div><div class="pair"><small>制作企画書</small><a href="https://hirotonozaki.github.io/jpa-project-proposal/">https://hirotonozaki.github.io/jpa-project-proposal/</a></div><div class="pair"><small>GitHub</small><a href="https://github.com/hirotonozaki/jpa-website">https://github.com/hirotonozaki/jpa-website</a></div></div>
+<div class="qrbox"><div class="cap"><span class="scan">SCAN TO VISIT</span><span>スマホで読み取り<br>公開サイトへ</span></div><div class="qrcard"><img src="assets/images/JPA_QR_Code.png" alt="日本ペンマンシップ協会 公式サイトのQRコード"></div></div></div>
+<div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作レポート ｜ 野崎 大翔</span><span class="pnum">19</span></div></section>
+</body></html>
