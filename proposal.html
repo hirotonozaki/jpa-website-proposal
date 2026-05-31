@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本ペンマンシップ協会 公式サイト 制作企画書｜野崎大翔</title>
+<meta name="description" content="日本ペンマンシップ協会 公式サイト 制作企画書（HTML/CSS/JavaScript 実装担当）。課題・情報設計・実装・レスポンシブ対応をまとめたポートフォリオ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/proposal.css">
+</head>
+<body>
+
+<!-- 01 表紙 -->
+<section class="page cover">
+  <div class="cover__inner">
+    <div class="rule"></div>
+    <p class="kicker">Portfolio &nbsp;｜&nbsp; Web Production</p>
+    <h1>日本ペンマンシップ協会<br>公式サイト</h1>
+    <p class="sub">コーポレートサイト 制作企画書</p>
+    <p class="role"><b>HTML / CSS / JavaScript</b> 実装・レスポンシブ対応・UI実装 を担当</p>
+    <p class="status">実際に公開・運用中のWebサイト</p>
+    <div class="cover__meta">
+      <div><p class="k">制作者</p><p>野崎 大翔（Hiroto Nozaki）</p></div>
+      <div><p class="k">公開URL</p><p class="url">https://japanpenmanship.org/</p></div>
+      <div><p class="k">GitHub</p><p class="url gh">https://github.com/hirotonozaki/jpa-website</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 プロジェクト概要 -->
+<section class="page">
+  <header class="head"><span class="head__no">02</span><div><p class="eyebrow">Project Overview</p><h2 class="head__title">プロジェクト概要</h2></div></header>
+  <div class="cols cols-7-5">
+    <div class="col">
+      <p class="lead">ペンマンシップ（英字の書法・装飾文字のアート）の普及活動を行う団体「日本ペンマンシップ協会」の公式サイトです。協会紹介・6書体のギャラリー・見学／入会の問い合わせ・会員専用エリアまでを含む、全13ページのコーポレートサイトとして公開・運用されています。</p>
+      <div class="rolecard">
+        <h3>担当範囲</h3>
+        <ul class="dot-list">
+          <li>全ページの HTML / CSS コーディング</li>
+          <li>JavaScript による UI 実装（メニュー・スライダー・アニメーション等）</li>
+          <li>PC / タブレット / スマートフォンへのレスポンシブ対応</li>
+        </ul>
+        <p class="note" style="margin-top:4mm">※ デザイン方針・原稿・写真は協会側の素材をもとに、フロントエンド実装を担当。</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="stats">
+        <div class="stat"><span class="num">13</span><span class="lbl">ページ構成</span></div>
+        <div class="stat"><span class="num">3</span><span class="lbl">レスポンシブ<br>ブレークポイント</span></div>
+        <div class="stat"><span class="num">6</span><span class="lbl">書体ギャラリー</span></div>
+      </div>
+      <p class="statusline"><span class="tag">STATUS</span> &nbsp;<b>公開・運用中</b></p>
+    </div>
+  </div>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">02</span></div>
+</section>
+
+<!-- 03 制作背景・課題 -->
+<section class="page">
+  <header class="head"><span class="head__no">03</span><div><p class="eyebrow">Background &amp; Issues</p><h2 class="head__title">制作背景・課題</h2></div></header>
+  <p class="lead" style="margin-bottom:8mm">ペンマンシップは日本では認知の低い専門分野で、協会にとっては「活動を知ってもらい、見学・入会につなげる」ことが目的になります。サイトには、初めて触れる人にも魅力が伝わり、迷わず情報へたどり着ける設計が求められました。</p>
+  <div class="issues">
+    <div class="issue"><div class="n">01</div><h3>専門用語が多く離脱されやすい</h3><p>前提知識のない訪問者でも読み進められるよう、情報を段階的に見せる必要がある。</p></div>
+    <div class="issue"><div class="n">02</div><h3>6書体という情報量の多さ</h3><p>特徴の異なる書体を、迷わせず・比較しやすく見せる構成が必要。</p></div>
+    <div class="issue"><div class="n">03</div><h3>見学・入会への導線確保</h3><p>どのページからでも問い合わせへたどり着ける回遊性が必要。</p></div>
+    <div class="issue"><div class="n">04</div><h3>端末差による表示崩れ</h3><p>PCでの閲覧を中心に想定しつつ、スマホでもレイアウトを破綻させない。</p></div>
+  </div>
+  <p class="rolehint">私の役割：これらの課題を満たすUIを、表示崩れなく・保守しやすい形でコーディングすること。</p>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">03</span></div>
+</section>
+
+<!-- 04 ターゲット分析 -->
+<section class="page">
+  <header class="head"><span class="head__no">04</span><div><p class="eyebrow">Target Analysis</p><h2 class="head__title">ターゲット分析</h2></div></header>
+  <div class="cols cols-6-6">
+    <div class="col">
+      <p class="subhead">主な想定ユーザー</p>
+      <div class="persona"><span class="pdot"></span><h4>カリグラフィー・美文字に関心のある層</h4><p>「どんな書体があるのか」「作品の雰囲気」を見たい</p></div>
+      <div class="persona"><span class="pdot"></span><h4>英字書法（ペン字）の経験者</h4><p>技術・書体の詳細や、同好の場としての協会を探している</p></div>
+      <div class="persona"><span class="pdot"></span><h4>見学を考えている初心者</h4><p>雰囲気と、入会・見学の具体的な方法を知りたい</p></div>
+    </div>
+    <div class="col">
+      <div class="needs">
+        <h3>ニーズと実装への反映</h3>
+        <div class="row"><b>作品をしっかり見たい</b><span>作品画像を大きく扱うギャラリー構成</span></div>
+        <div class="row"><b>落ち着いて読みたい</b><span>余白を活かした静かなトーンで実装</span></div>
+        <div class="row"><b>入会方法を知りたい</b><span>全ページから問い合わせへ向かう導線</span></div>
+        <div class="row"><b>スマホでも見たい</b><span>端末幅に応じた表示・操作の最適化</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">04</span></div>
+</section>
+
+<!-- 05 サイトマップ & 情報設計 -->
+<section class="page">
+  <header class="head"><span class="head__no">05</span><div><p class="eyebrow">Sitemap &amp; Information Architecture</p><h2 class="head__title">サイトマップ &amp; 情報設計</h2></div></header>
+  <div class="cols cols-11-9">
+    <div class="col">
+      <p class="subhead">サイトマップ</p>
+      <span class="node-top">TOP（index）</span>
+      <ul class="tree">
+        <li><div class="box">About Us（協会について）</div></li>
+        <li><div class="box">Penmanship（ペンマンシップ）</div></li>
+        <li><div class="box">Gallery（書体・作品）</div></li>
+        <li><div class="box">Contact（問い合わせ）</div></li>
+        <li><div class="box">Members Only（会員専用）</div></li>
+        <li><div class="box">Privacy Policy</div></li>
+      </ul>
+      <p class="tree-sub">Penmanship 配下に 6 書体の詳細ページ（Business Writing / Roundhand / Ornamental / German Text / Flourishing / Engrossing）</p>
+    </div>
+    <div class="col">
+      <div class="ia">
+        <h3>情報設計の意図</h3>
+        <ul>
+          <li>トップを「目次」と位置づけ、4テーマへカード型に分岐させて全体像を把握しやすく。</li>
+          <li>ペンマンシップのページは「基礎 → 書体 → 筆記具 → 学習 → 歴史」と、理解が進む順に整理。</li>
+          <li>グローバルナビ・フッターナビ・トップのカードと、複数の導線で目的のページへ到達できるよう回遊性を確保。</li>
+          <li>会員向け情報は専用エリアに分離し、一般訪問者の動線をシンプルに保つ。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">05</span></div>
+</section>
+
+<!-- 06 デザインコンセプト -->
+<section class="page">
+  <header class="head"><span class="head__no">06</span><div><p class="eyebrow">Design Concept</p><h2 class="head__title">デザインコンセプト</h2></div></header>
+  <div class="cols cols-7-5">
+    <div class="col">
+      <div class="concept-banner"><b>“インクと紙の上品さ”</b><span>手書き文字の美しさが主役。装飾は控えめにし、余白で見せる。</span></div>
+      <dl class="dl">
+        <div class="row"><dt>フォント</dt><dd>英字見出しに細身でクラシックな Marcellus、和文に Noto Sans / Serif JP を使い分け。FONTPLUS で指定フォントを表示。</dd></div>
+        <div class="row"><dt>配色・余白</dt><dd>落ち着いた背景に濃色テキスト。作品画像が引き立つよう、彩度を抑え余白を広めに。</dd></div>
+        <div class="row"><dt>あしらい</dt><dd>羽根・葉などの SVG 装飾を要所に配置。過剰にならない範囲で世界観を補強。</dd></div>
+      </dl>
+      <p class="note" style="margin-top:6mm">※ デザイン方針に沿って、各ブラウザ・端末で表示が崩れないよう忠実に実装することを担当した。</p>
+    </div>
+    <div class="col">
+      <figure class="shot shot--filled"><img src="assets/images/main-visual.png" alt="トップページ メインビジュアル（PC）"><figcaption>トップページ メインビジュアル</figcaption></figure>
+    </div>
+  </div>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">06</span></div>
+</section>
+
+<!-- 07 実装内容 & 使用技術 -->
+<section class="page">
+  <header class="head"><span class="head__no">07</span><div><p class="eyebrow">Implementation &amp; Tech Stack</p><h2 class="head__title">実装内容 &amp; 使用技術</h2></div></header>
+  <div class="cols cols-6-6">
+    <div class="col">
+      <p class="subhead">実装した主なUI</p>
+      <ul class="diamond-list">
+        <li>レスポンシブ対応（PC / タブレット / スマートフォン）</li>
+        <li>ハンバーガーメニュー（スマホ時のナビ開閉）</li>
+        <li>スクロール連動のフェードイン表示</li>
+        <li>slick によるスライダー（写真・筆記具／表示枚数を画面幅で可変）</li>
+        <li>Q&amp;A のアコーディオン開閉</li>
+        <li>ページトップへ戻るボタン</li>
+        <li>問い合わせフォーム（必須項目・アンケート・同意チェック）</li>
+        <li>Google カレンダー埋め込み／PDF 練習シートの配布</li>
+      </ul>
+    </div>
+    <div class="col">
+      <p class="subhead">使用技術</p>
+      <table class="techtable"><tbody>
+        <tr><th>マークアップ</th><td>HTML5（セマンティックタグ）</td></tr>
+        <tr><th>スタイル</th><td>CSS3（reset＋共通＋ページ別 / BEMライク命名）</td></tr>
+        <tr><th>スクリプト</th><td>JavaScript（jQuery 3.6.1）</td></tr>
+        <tr><th>ライブラリ</th><td>slick・animate.css</td></tr>
+        <tr><th>フォント</th><td>Google Fonts・FONTPLUS</td></tr>
+        <tr><th>その他</th><td>OGP・Googleカレンダー・SVG・PDF配布</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">07</span></div>
+</section>
+
+<!-- 08 工夫した点 -->
+<section class="page">
+  <header class="head"><span class="head__no">08</span><div><p class="eyebrow">Key Points</p><h2 class="head__title">工夫した点</h2></div></header>
+  <div class="kpgrid">
+    <div class="kp"><span class="badge">1</span><h3>情報を段階的に見せる</h3><p>スクロール位置を監視し、要素が画面に入ったタイミングで順に表示。情報量の多いページでも一度に見せず、視線を上から誘導して離脱を抑えた。</p></div>
+    <div class="kp"><span class="badge">2</span><h3>6書体ページの共通化</h3><p>詳細6ページを共通テンプレートで構築。見た目の統一と、修正時の保守性を両立させた。</p></div>
+    <div class="kp"><span class="badge">3</span><h3>CSS設計の整理</h3><p>全ページ共通のヘッダー・フッター・ボタンは common.css に集約。block__element 形式の命名で、どの要素のスタイルか追いやすくした。</p></div>
+    <div class="kp"><span class="badge">4</span><h3>端末ごとの最適化</h3><p>スライダーの表示枚数をブレークポイントごとに変更（PC3→タブ2→スマホ1）。どの画面でも見やすさを保った。</p></div>
+  </div>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">08</span></div>
+</section>
+
+<!-- 09 レスポンシブ対応 -->
+<section class="page">
+  <header class="head"><span class="head__no">09</span><div><p class="eyebrow">Responsive Design</p><h2 class="head__title">レスポンシブ対応</h2></div></header>
+  <p class="lead" style="margin-bottom:5mm">PC・タブレット・スマートフォンの表示に対応。主なブレークポイントは 1024px / 768px / 500px で、画面幅に応じてレイアウト・ナビ・スライダーの見せ方を切り替えています。</p>
+  <div class="bp">
+    <div class="col2"><div class="h">PC</div><div class="r">1025px〜</div><div class="d">ナビ横並び／スライダー3枚／2カラム中心</div></div>
+    <div class="col2"><div class="h">TABLET</div><div class="r">768〜1024px</div><div class="d">余白調整／スライダー2枚／一部1カラム化</div></div>
+    <div class="col2"><div class="h">SP</div><div class="r">〜500px</div><div class="d">ハンバーガー／スライダー1枚／縦積み</div></div>
+  </div>
+  <p class="reflect"><b>制作・反省点：</b> 本案件は PC 基準（max-width）で組んだため、次は モバイルファースト＋ブレークポイントの統一 で設計したい。</p>
+  <div class="devices">
+    <figure class="device device--pc">
+      <figcaption class="device__label"><span class="device__name">PC</span><span class="device__size">1025px〜</span></figcaption>
+      <div class="device__shot"><img src="assets/images/responsive-pc.png" alt="PC表示のモックアップ"></div>
+    </figure>
+    <figure class="device device--tablet">
+      <figcaption class="device__label"><span class="device__name">TABLET</span><span class="device__size">768–1024px</span></figcaption>
+      <div class="device__shot"><img src="assets/images/responsive-tablet.png" alt="タブレット表示のモックアップ"></div>
+    </figure>
+    <figure class="device device--sp">
+      <figcaption class="device__label"><span class="device__name">SP</span><span class="device__size">〜500px</span></figcaption>
+      <div class="device__shot"><img src="assets/images/responsive-sp.png" alt="スマートフォン表示のモックアップ"></div>
+    </figure>
+  </div>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">09</span></div>
+</section>
+
+<!-- 10 改善提案 & 学んだこと / URL・QR -->
+<section class="page">
+  <header class="head"><span class="head__no">10</span><div><p class="eyebrow">Improvements &amp; Learnings</p><h2 class="head__title">改善提案 &amp; 制作を通じて学んだこと</h2></div></header>
+  <div class="cols cols-6-6">
+    <div class="col">
+      <p class="subhead">今後の改善提案</p>
+      <ul class="diamond-list">
+        <li>画像最適化（WebP化・遅延読み込み）で初回表示を軽量化</li>
+        <li>jQuery 依存からバニラJS / IntersectionObserver への置き換え</li>
+        <li>alt の整備などアクセシビリティの底上げ</li>
+        <li>フォームの入力チェック・送信時フィードバックのUX強化</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="learn">
+        <h3>制作を通じて学んだこと</h3>
+        <ul>
+          <li>公開・運用される前提での、表示崩れや端末差への配慮の重要さ。</li>
+          <li>多ページサイトでの共通化・命名ルールなど、保守性を意識した実装。</li>
+          <li>「何を作るか」だけでなく「なぜそう作るか（目的・導線）」を考える視点。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="urlband">
+    <div>
+      <p class="k">公開URL ・ GitHub</p>
+      <div class="pair"><small>公開URL（運用中）</small><a href="https://japanpenmanship.org/">https://japanpenmanship.org/</a></div>
+      <div class="pair"><small>GitHub</small><a href="https://github.com/hirotonozaki/jpa-website">https://github.com/hirotonozaki/jpa-website</a></div>
+    </div>
+    <div class="qrbox">
+      <div class="cap"><span class="scan">SCAN TO VISIT</span><span>スマホで読み取り<br>公開サイトへ</span></div>
+      <div class="qrcard"><img src="assets/images/JPA_QR_Code.png" alt="日本ペンマンシップ協会 公式サイトのQRコード"></div>
+    </div>
+  </div>
+  <div class="pfoot"><span class="run">日本ペンマンシップ協会 公式サイト 制作企画書 ｜ 野崎 大翔</span><span class="pnum">10</span></div>
+</section>
+
+</body>
+</html>
